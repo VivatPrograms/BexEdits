@@ -2,16 +2,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const playButton = document.querySelector(".play-button");
     const video = document.querySelector(".showreel-video");
 
-    playButton.addEventListener("click", () => {
-        video.play();
-        playButton.classList.add("hidden");
-    });
+    // Allow clicking either the play button or the video itself
+    playButton.addEventListener("click", toggleVideo);
+    video.addEventListener("click", toggleVideo);
+
+    function toggleVideo() {
+        if (video.paused) {
+            video.play();
+            playButton.classList.add("hidden");
+        } else {
+            video.pause();
+            playButton.classList.remove("hidden");
+        }
+    }
 
     video.addEventListener("ended", () => {
         playButton.classList.remove("hidden");
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const fadeInElements = document.querySelectorAll(".video-row");
