@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- <nav class="navbar">
+        <div class="navbar-left">
+            <h1>BexEdits</h1>
+        </div>
+        <div class="navbar-right">
+            <button class="contact-btn">Contact</button>
+        </div>
+    </nav> -->
+
+    <section class="portfolio-section">
+        <div class="portfolio-content">
+            <!-- Background Video -->
+            <video autoplay loop muted class="bg-video">
+                <source src="assets/bg.mp4" type="video/mp4">
+            </video>
+
+            <div class="main-content-wrapper">
+                <div class="showreel" id="showreel">
+                    <video class="showreel-video" poster="assets/showreel.jpg">
+                        <source src="assets/showreel.mp4" type="video/mp4">
+                    </video>
+                    <div class="play-button">
+                        <img src="assets/play-image.jpg" alt="Play Showreel" class="play-image">
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <a href="#contact" class="button button-outline" id="contact-button">Contact</a>
+                    <a href="#about" class="button button-filled" id="about-button">About Me</a>
+                </div>
+            </div>
+            <!-- Showreel Container -->
+
+            <hr class="solid">
+
+            <!-- YouTube Examples Container -->
+            <div class="video-examples">
+                <div class="video-row">
+                    <div class="youtube-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-VG0TyQhY_A" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="youtube-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jy7fFskd7yI" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="video-row">
+                    <div class="youtube-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jy7fFskd7yI" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="youtube-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jy7fFskd7yI" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about-section">
+        <div class="about-card">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p>With over a decade of experience in video editing and post-production, I've developed a keen eye
+                    for visual storytelling that captivates and engages audiences. My journey in digital media has
+                    led me to work with leading brands and creative agencies, always pushing the boundaries of
+                    what's possible in video content.</p>
+                <p>Specializing in motion graphics, color grading, and seamless transitions, I bring a unique blend
+                    of technical expertise and creative vision to every project. Whether it's crafting compelling
+                    narratives for commercials, designing eye-catching social media content, or producing full-scale
+                    documentary features, I'm passionate about bringing ideas to life through the power of video.
+                </p>
+                <p>My workflow combines industry-standard tools like Adobe Premiere Pro, After Effects, and DaVinci
+                    Resolve with cutting-edge techniques to deliver content that not only meets but exceeds client
+                    expectations. I believe in staying ahead of industry trends while maintaining a timeless
+                    approach to storytelling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to connect, feel free to reach out to me through any of the platforms
+            below!</p>
+
+        <div class="contact-links">
+            <a href="https://www.youtube.com/@BexEditing?sub_confirmation=1" target="_blank" class="contact-link"
+                aria-label="Discord">
+                <img src="../assets/youtube.jpg" alt="Discord">
+            </a>
+            <a href="https://x.com/DBirskus" target="_blank" class="contact-link" aria-label="Twitter">
+                <img src="../assets/twitter.webp" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/bexeditin/reels/" target="_blank" class="contact-link"
+                aria-label="Facebook">
+                <img src="../assets/instagram.jpg" alt="Facebook">
+            </a>
+        </div>
+
+        <!-- Gmail Button -->
+        <a href="mailto:zalgirismantasofficial@gmail.com" class="contact-link email-btn"
+            aria-label="Email">b.deivido@gmail.com</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Bex Edits. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
